@@ -25,3 +25,11 @@ El resultado debe ser mostrado en la pantalla.
 Extras:
 
 Un botón que copie el texto encriptado/desencriptado para la sección de transferencia, o sea que tenga la misma funcionalidad del ctrl+C o de la opción "copiar" del menú de las aplicaciones.
+
+El codigo encriptado del reto era:
+
+fenterlimescimesdaidenters poberr enternfrenterntair enterstenter dentersaifimesober y haibenterrlober cobernclufatimesdober cobern enterximestober!
+
+Y el codigo desencriptado mediante esta web es:
+
+Felicidades por enfrentar este desafio y haberlo concluido con exito!
