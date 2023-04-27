@@ -1,0 +1,365 @@
+body {
+  background-color: #D8DFE8;
+  text-align: center;
+  height: 100%;
+  margin: 0;
+  font-family: Inter;
+}
+
+#container {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+}
+
+#left-container {
+  display: flex;
+  flex-direction: column;
+  flex: 7;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 20px;
+  padding-left: 80px; /* agregar margen izquierdo */
+  padding-right: 60px;
+  
+}
+
+img {
+  width: 10%;
+  margin-top: 10px;
+  align-self: flex-start; /* posicionar imagen arriba a la izquierda */
+  margin-left: -70px;
+}
+
+
+
+#input-area {
+  font-size: 32px;
+  font-family: Inter;
+  padding: 50px ;
+  background-color: #D8DFE8;
+  outline: none;
+  width: 100%;
+  height: 80vh;
+  resize: none;
+  margin-top: 20px;
+  border: none;
+  color: #0A3871;
+  margin-right: 20px;
+}
+
+#input-area::placeholder {
+  color: #0A3871;
+}
+
+
+#button-container {
+  display: flex;
+  justify-content: space-between; /* Distribuye el espacio disponible */
+  align-items: center;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  gap: 20px; /* Agregar separación entre los botones */
+}
+
+#run-button {
+  font-family: Inter;
+  flex: 1; /* Ocupa el espacio disponible */
+  border: none;
+  border-radius: 20px; /* Hace los botones redondeados */
+  padding: 10px;
+  font-size: 1.2rem;
+  cursor: pointer;
+
+}
+
+#clear-button {
+  font-family: Inter;
+  flex: 1; /* Ocupa el espacio disponible */
+  border: none;
+  border-radius: 20px; /* Hace los botones redondeados */
+  padding: 10px;
+  font-size: 1.2rem;
+  cursor: pointer;
+
+}
+
+#text-container {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  margin-left: 80px;
+ 
+}
+
+#text-container img {
+  margin-top: 13px;
+  width: 15px;
+  margin-right: 10px;
+  color: black;
+}
+
+#text-container p {
+  line-height: 150%;
+  opacity: 80%;
+  font-family: Inter;
+  color: #343A40;
+  font-size: 12px ;
+
+}
+
+
+#right-container {
+  flex: 3;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 20px;
+  margin-right: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+ 
+}
+
+#output-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 32px;
+  background-color: #FFFFFF;
+
+}
+
+#image-container {
+  width: 100%;
+  align-items: center;
+}
+#output-container img {
+  width: 80%;
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+
+#output-container h1 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+#output-container p {
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  color: #343A40;
+}
+
+.copy-button {
+  background-color: #0A3871;
+  color: #D8DFE8;
+  border: none;
+  padding: 8px;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 8px;
+  display: none;
+}
+
+@media (max-width: 600px) {
+  body {
+    font-size: 16px;
+  }
+
+  #container {
+    flex-direction: column;
+  }
+
+  #left-container {
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  img {
+    width: 20%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  #input-area {
+    font-size: 24px;
+    height: 60vh;
+    margin-top: 10px;
+  }
+
+  #button-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  button {
+    flex: none;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  #text-container {
+    margin-left: 0;
+  }
+
+  #right-container {
+    padding: 10px;
+    margin-right: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  #output-container img {
+    width: 100%;
+  }
+
+
+}
+
+/* Estilos para dispositivos móviles */
+@media only screen and (max-width: 480px) {
+  #container {
+    flex-direction: column;
+    height: auto;
+  }
+
+  #left-container {
+    flex: 1;
+    padding: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    align-items: center;
+  }
+
+  img {
+    width: 20%;
+    margin-top: 20px;
+    margin-left: 0;
+  }
+
+  #input-area {
+    font-size: 16px;
+    height: 40vh;
+    margin-top: 10px;
+  }
+
+  #button-container {
+    flex-direction: column;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    gap: 10px;
+  }
+
+  button {
+    flex: 1;
+    font-size: 1rem;
+    padding: 8px;
+  }
+
+  #text-container {
+    margin-top: 0;
+    margin-left: 0;
+  }
+
+  #text-container img {
+    margin-top: 5px;
+    width: 12px;
+    margin-right: 5px;
+  }
+
+  #text-container p {
+    font-size: 10px;
+  }
+
+  #right-container {
+    flex: 1;
+    margin-right: 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 0;
+    
+  }
+
+  #output-container h1 {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+
+  #output-container p {
+    font-size: 14px;
+  }
+  
+  #output-container img {
+    display: none;
+  }
+
+  #copy-button {
+    margin-left: 20px;
+    margin-right: 20px;
+    display: none;
+  }
+
+  
+}
+
+/* Estilos para tablets */
+@media only screen and (max-width: 768px) {
+  #left-container {
+    padding-left: 60px;
+    padding-right: 40px;
+  }
+
+  img {
+    width: 15%;
+  }
+
+  #input-area {
+    font-size: 24px;
+  }
+
+  #button-container {
+    gap: 15px;
+  }
+
+  #text-container img {
+    margin-top: 10px;
+    width: 14px;
+  }
+
+  #text-container p {
+    font-size: 12px;
+  }
+
+  #right-container {
+    margin-right: 10px;
+    padding: 10px;
+  }
+
+  #output-container h1 {
+    font-size: 20px;
+   
+  }
+
+  #output-container p {
+    font-size: 16px;
+  }
+  
+  #output-container img {
+    display: none;
+  }
+
+  #copy-button {
+    margin-left: 20px;
+    margin-right: 20px;
+    display: none;
+  }
+}
